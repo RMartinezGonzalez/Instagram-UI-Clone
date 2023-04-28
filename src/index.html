@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Instagram with Tailwind CSS</title>
+  <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/3621/3621435.png" type="image/x-icon">
   <link rel="stylesheet" href="../dist/output.css">
 </head>
 <body>
@@ -48,9 +49,9 @@
 
   <!-- Feed -->
 
-  <main class="">
+  <main class="grid grid-cols-1 md:grid-cols-3 m-auto md:max-w-6xl">
 
-    <section class="">
+    <section class="md:col-span-2">
 
       <!-- Left -->
       
@@ -300,15 +301,57 @@
 
     </section>
     
-    <section class="">
+    <aside class="hidden md:inline-grid md:col-span-1">
 
       <!-- Right -->
-      
+      <div class="fixed w-[380px]">
         <!-- Mini Profile -->
-      
+        
+        <div class="flex items-center justify-between mt-14 ml-10">
+          <img class="h-16 rounded-full border p-[2px]" src="./img/icon.png" alt="profile picture">
+          <div class="flex-1 ml-4">
+            <h2 class="font-bold">_ricardomartinezgonzalez_</h2>
+            <h3 class="text-sm text-gray-400">Welcome to Instagram</h3>
+          </div>
+          <button class="font-semibold text-blue-400 text-sm">Sign out</button>
+        </div>
+        
         <!-- Suggestions -->
 
-    </section>
+        <div class="mt-4 ml-10">
+          <div class="flex justify-between mb-5 text-sm">
+            <h3 class="font-bold text-gray-500">Suggestions for you</h3>
+            <button class="text-gray-600 font-semibold">See all</button>
+          </div>
+          <div class="flex items-center justify-between mt-3">
+            <img class="h-10 border rounded-full p-[2px]" src="https://i.pravatar.cc/150?img=17" alt="profile picture">
+            <div class="flex-1 ml-4">
+              <h2 class="font-semibold text-sm">john823789</h2>
+              <h3 class="text-sm text-gray-400">Manager</h3>
+            </div>
+            <button class="font-semibold text-blue-400 text-sm">Follow</button>
+          </div>
+          <div class="flex items-center justify-between mt-3">
+            <img class="h-10 border rounded-full p-[2px]" src="https://i.pravatar.cc/150?img=19" alt="profile picture">
+            <div class="flex-1 ml-4">
+              <h2 class="font-semibold text-sm">saradaw42fs</h2>
+              <h3 class="text-sm text-gray-400">Engineer</h3>
+            </div>
+            <button class="font-semibold text-blue-400 text-sm">Follow</button>
+          </div>
+          <div class="flex items-center justify-between mt-3">
+            <img class="h-10 border rounded-full p-[2px]" src="https://i.pravatar.cc/150?img=18" alt="profile picture">
+            <div class="flex-1 ml-4">
+              <h2 class="font-semibold text-sm">davidiwiialw</h2>
+              <h3 class="text-sm text-gray-400">Manager</h3>
+            </div>
+            <button class="font-semibold text-blue-400 text-sm">Follow</button>
+          </div>
+        </div>        
+
+      </div>
+
+    </aside>
 
   </main>
 </body>
